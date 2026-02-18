@@ -11,7 +11,7 @@ int main() {
     cout << "Insert height: ";
     cin >> h;
 
-    a = 0.5 * (b + h);
+    a = 0.5 * b * h;
 
     cout << "The area of the triangle is: " << a << endl;
 
