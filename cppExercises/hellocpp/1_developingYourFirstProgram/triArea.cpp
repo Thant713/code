@@ -1,19 +1,19 @@
-#include <iostream>
-#include <iomanip>
 #include <cmath>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
 int main() {
-    double b, h, a;
+  double b, h, a;
 
-    cout << "Insert base: ";
-    cin >> b;
-    cout << "Insert height: ";
-    cin >> h;
+  cout << "Insert base: ";
+  cin >> b;
+  cout << "Insert height: ";
+  cin >> h;
 
-    a = 0.5 * b * h;
+  a = 0.5 * b * h;
 
-    cout << "The area of the triangle is: " << a << endl;
+  cout << "The area of the triangle is: " << a << endl;
 
-    return 0;
+  return 0;
 }

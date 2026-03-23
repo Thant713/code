@@ -12,7 +12,9 @@ void printGreeting() {
   return;
 }
 
-void printNumber(int n) { cout << "Number: " << n << endl; }
+void printNumber(int n) {
+  cout << "Number: " << n << endl;
+}
 
 int main() {
   printLine();

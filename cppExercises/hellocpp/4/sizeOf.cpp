@@ -14,8 +14,8 @@ int main() {
        << "\nOne double: " << sizeof(double) << " bytes"
        << "\nOne char: " << sizeof(char) << " bytes" << endl;
 
-  if (sizeof(intArray) + sizeof(doubleArray) + sizeof(charArray) ==
-      (sizeof(int) + sizeof(double) + sizeof(char)) * 10) {
+  if (sizeof(intArray) + sizeof(doubleArray) + sizeof(charArray)
+      == (sizeof(int) + sizeof(double) + sizeof(char)) * 10) {
     cout << "\nVerification: int array = 4 * 10 = 40 bytes" << endl;
   }
 
