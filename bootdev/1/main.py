@@ -19,10 +19,11 @@ def print_report(book_path, numWords, all_char_count):
   print("============= END ===============")
 
 def main():
-  if sys.argv < 2:
-    print("")
-
+  if len(sys.argv) < 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
   book_path = sys.argv[1]
+
   text = get_book_text(book_path)
   bookChars = get_num_chars(text)
   numWords = get_num_words(text)
