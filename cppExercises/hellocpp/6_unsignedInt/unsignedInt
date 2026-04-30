@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main()
+{
+    // TODO: Demonstrate the wrap-around behavior of unsigned integers
+
+    unsigned int value{ 0 };
+
+    std::cout << "Starting value: " << value << '\n';
+
+    // TODO: Subtract 1 from value and show what happens
+    // - The result demonstrates why unsigned integers can be dangerous
+    // Example output:
+    //   After subtracting 1: 4294967295
+
+    std::cout << "After subtracting 1: " << value << '\n';
+
+    // TODO: Show that this wraps to the maximum unsigned int value
+    // - Print a message explaining what happened
+    // Example output:
+    //   0 wraps to: 4294967295
+
+    // Compare with signed integer behavior
+    int signedValue{ 0 };
+    --signedValue;
+    std::cout << "Signed int 0 - 1 = " << signedValue << " (expected: -1)" << '\n';
+
+    return 0;
+}
