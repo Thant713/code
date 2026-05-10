@@ -1,0 +1,27 @@
+[
+  {
+    "context": "!Editor",
+    "bindings": {
+      "l": "menu::SelectPrevious",
+      "k": "menu::SelectNext",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-j": "editor::DuplicateLineDown",
+      "cmd-[": "editor::Fold",
+      "cmd-]": "editor::UnfoldLines",
+      "cmd-alt-[": "editor::FoldAll",
+      "cmd-alt-]": "editor::UnfoldAll",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-s": "zed::OpenSettingsFile",
+      "alt-k": "zed::OpenKeymapFile",
+      "cmd-\\": "workspace::ActivatePreviousPane",
+    },
+  },
+]
