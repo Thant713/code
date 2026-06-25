@@ -3,8 +3,8 @@
     "context": "!Editor",
     "bindings": {
       "l": "menu::SelectPrevious",
-      "k": "menu::SelectNext",
-    },
+      "k": "menu::SelectNext"
+    }
   },
   {
     "context": "Editor",
@@ -13,15 +13,34 @@
       "cmd-[": "editor::Fold",
       "cmd-]": "editor::UnfoldLines",
       "cmd-alt-[": "editor::FoldAll",
-      "cmd-alt-]": "editor::UnfoldAll",
-    },
+      "cmd-alt-]": "editor::UnfoldAll"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "alt-s": "zed::OpenSettingsFile",
+      "alt-f": "zed::OpenSettingsFile",
       "alt-k": "zed::OpenKeymapFile",
       "cmd-\\": "workspace::ActivatePreviousPane",
-    },
+
+      "alt-shift-e": "project_panel::ToggleFocus",
+      "alt-shift-q": "agent::ToggleFocus",
+      "alt-shift-w": "editor::ToggleFocus",
+      "alt-shift-s": "terminal_panel::ToggleFocus"
+    }
   },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-z": "project_panel::NewFile",
+      "alt-x": "project_panel::NewDirectory"
+    }
+  },
+  {
+    "bindings": {
+      "alt-q": "workspace::ToggleLeftDock",
+      "alt-e": "workspace::ToggleRightDock",
+      "alt-s": "workspace::ToggleBottomDock"
+    }
+  }
 ]

@@ -1,0 +1,66 @@
+------------------------------------------------------------
+Q1: Monitor class header file: Monitor.h
+
+Instructions:
+1. Code the class specification file and name it as Monitor.h. The member functions should just be prototypes.
+The class specification should define the prototypes of each functions.
+
+Class name: Monitor
+Private Member Attributes:
+    string brand
+    int    width (px)
+    int    height(px)
+    int    ppi
+
+Public Member Functions as Prototypes:
+    Prototype for Setters (Mutators) for each member attribute that takes parameter for the attribute and returns no value.
+    Prototype for Getters (Accessors) for each member attribute returns the data type as specified in the attribute list.
+    Prototype for getScreenSize() function that calculates and returns the diagonal size of the monitor in inches as int. Be sure the data types will not demote numbers in the calculations. Use the formula:
+      Diagonal = sqrt( (w/ppi)² + (h/ppi)² )
+    Use: sqrt() and pow(x,y) functions
+    Prototype for listMonitor() that takes no parameter and no return value but generates cout of the Monitor as:
+      Brand: Samsung Screen size (pixels) 1920x1080 @ 70ppi, (diagonal) "result of getScreenSize"
+
+------------------------------------------------------------
+Q2: Monitor class - Monitor.cpp
+
+Instructions:
+2. Code the class cpp file and name it as Monitor.cpp. This should contain the setters and getter functions that are not inline, including the getScreenSize function and listMonitor function. For the getScreenSize() function, the return type should be int. You do not need to round the results of the calculation.
+
+Class name: Monitor
+Private Member Attributes:
+    string brand
+    int    width (px)
+    int    height(px)
+    int    ppi
+
+Public Members Functions that are not inline:
+    Setters (Mutators) for each member attribute
+    Getters (Accessors) for each member attribute returns the data type as specified in the attribute list.
+    getScreenSize() function that calculates the diagonal size of the monitor in inches. Be sure the data types will not demote numbers in the calculations. Use the formula:
+      Diagonal = sqrt( (w/ppi)² + (h/ppi)² )
+    Use: sqrt() and pow(x,y) functions
+    listMonitor function that list Monitor specifications.
+      Brand: Acer  Screen size: (pixels) 1920x1080 @ 70ppi, (diagonal) "result of getScreenSize"
+
+------------------------------------------------------------
+Q3: main() function - monitorApp.cpp
+
+Instructions:
+1) Code main() function and name it monitorApp.cpp.
+2) Instantiate a Samsung object of the Monitor class and set width and height as 1920 px x 1080 px, set the brand as Samsung and ppi as 70. Call the functions to calculate the Screen Size and write the output listing. Output should be:
+   Brand: Samsung Screen size (pixels) 1920x1080 @ 70ppi, (diagonal) "result of getScreenSize"
+4) Upload the monitorApp.cpp.
+
+------------------------------------------------------------
+Q4: Test run screenshot
+
+Upload image file showing test run and results of monitorApp C++ program. Image can be generated from either console command line or IDE run dialogue.
+Example output:
+Brand: Samsung Screen size (pixels) 1920x1080 @ 70ppi, (diagonal) "result of getScreenSize"
+
+------------------------------------------------------------
+Q5: UML diagram
+
+Draw a UML diagram for the Monitor class. Upload the image of the Monitor class UML diagram.
+Optionally, you can provide a hand-written UML drawing on a test answer sheet provided during the test. Write your name on the answer sheet.
