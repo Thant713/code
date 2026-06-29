@@ -2,8 +2,8 @@
   {
     "context": "!Editor",
     "bindings": {
-      "l": "menu::SelectPrevious",
-      "k": "menu::SelectNext"
+      "k": "menu::SelectPrevious",
+      "j": "menu::SelectNext"
     }
   },
   {
@@ -21,12 +21,7 @@
     "bindings": {
       "alt-f": "zed::OpenSettingsFile",
       "alt-k": "zed::OpenKeymapFile",
-      "cmd-\\": "workspace::ActivatePreviousPane",
-
-      "alt-shift-e": "project_panel::ToggleFocus",
-      "alt-shift-q": "agent::ToggleFocus",
-      "alt-shift-w": "editor::ToggleFocus",
-      "alt-shift-s": "terminal_panel::ToggleFocus"
+      "cmd-\\": "workspace::ActivatePreviousPane"
     }
   },
   {
@@ -39,8 +34,23 @@
   {
     "bindings": {
       "alt-q": "workspace::ToggleLeftDock",
-      "alt-e": "workspace::ToggleRightDock",
-      "alt-s": "workspace::ToggleBottomDock"
+      "alt-w": "workspace::ToggleRightDock",
+      "alt-e": "project_panel::ToggleFocus",
+      "alt-d": "agent::ToggleFocus",
+      "alt-s": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::Open",
+      "f2": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-c": "agent::AddSelectionToThread"
     }
   }
 ]

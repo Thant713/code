@@ -1,0 +1,18 @@
+For each index in the input list, starting with the second element:
+    Set a j variable to the current index
+    While j is greater than 0 and the element at index j-1 is greater than the element at index j:
+        Swap the elements at indices j and j-1
+        Decrement j by 1
+    Return the list
+
+Tip
+
+In some languages you need to use a temp variable to swap values, but in python you can do that in a single line:
+
+a = 5
+b = 3
+a, b = b, a
+print(a)
+# 3
+print(b)
+# 5
