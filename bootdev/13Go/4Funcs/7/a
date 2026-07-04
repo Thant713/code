@@ -1,0 +1,5 @@
+Assignment
+
+One of our clients likes us to send text messages reminding users of life events coming up.
+
+Fix the bug by adding named return values to the function signature – the bare return at the end is already a naked return that will return them. The variables need to be automatically initialized. Order them as they appear in the code. Do not alter the body of the function.

@@ -1,0 +1,9 @@
+Assignment
+
+Complete the bootup function.
+
+    Be sure to print the following string just before the bootup function returns:
+
+TEXTIO BOOTUP DONE
+
+    Use defer so that you only have to write this message once instead of before each return statement. The message should be printed on its own newline.
