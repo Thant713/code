@@ -1,0 +1,7 @@
+Assignment
+
+Implement the getExpenseReport function.
+
+    If the expense is an email, return the email's toAddress and the cost of the email.
+    If the expense is an sms, return the sms's toPhoneNumber and its cost.
+    If the expense has any other underlying type, return an empty string and 0.0 for the cost.
