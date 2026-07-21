@@ -1,0 +1,7 @@
+Assignment
+
+We've been asked to add a feature that extracts costs for a given day.
+
+Complete the getDayCosts() function using the append() function. It accepts a slice of cost structs and a day int, and it returns a float64 slice containing that day's costs. A day may have multiple costs.
+
+If there are no costs for that day, return an empty, non-nil slice.
