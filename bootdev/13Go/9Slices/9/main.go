@@ -1,13 +1,13 @@
 package main
 
 func createMatrix(rows, cols int) [][]int {
-	multiplication := [][]int{}
+	matrix := [][]int{}
 	for i := 0; i < rows; i++ {
-		row := make([]int, cols)
+		row := []int{}
 		for j := 0; j < cols; j++ {
-			row[j] = i * j
+			row = append(row, i*j)
 		}
-		multiplication = append(multiplication, row)
+		matrix = append(matrix, row)
 	}
-	return multiplication
+	return matrix
 }
