@@ -1,0 +1,11 @@
+Assignment
+
+It's important to keep up with privacy regulations and to respect our user's data. We need a function that will delete user records.
+
+Complete the deleteIfNecessary function. The user struct has a scheduledForDeletion field that determines if they are scheduled for deletion or not.
+
+    If the user doesn't exist in the map, return the error not found.
+    If they exist but aren't scheduled for deletion, return deleted as false with no errors.
+    If they exist and are scheduled for deletion, return deleted as true with no errors and delete their record from the map.
+
+Like slices, maps are reference types. When a map is passed into a function, we can make changes to the original – we don't have a copy.
