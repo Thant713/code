@@ -1,0 +1,3 @@
+Assignment
+
+Fix the bug in the code so that setMessage sets the message field of the given email struct, and the new value persists outside the scope of the setMessage method.
