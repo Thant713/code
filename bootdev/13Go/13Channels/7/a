@@ -1,0 +1,8 @@
+Assignment
+
+Complete the logMessages function. It should:
+
+    Use an infinite for loop.
+    Use a select statement to read from chEmails and chSms in the order messages arrive.
+    Log messages with logEmail and logSms.
+    return when one of the two channels closes, whichever is first.

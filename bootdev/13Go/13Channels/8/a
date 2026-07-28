@@ -1,0 +1,11 @@
+Assignment
+
+Like all good back-end engineers, we frequently save backup snapshots of the Textio database.
+
+Complete the saveBackups function.
+
+It should use a loop to read values from the snapshotTicker and saveAfter channels simultaneously and continuously.
+
+    If a value is received from snapshotTicker, call takeSnapshot()
+    If a value is received from saveAfter, call saveSnapshot() and return from the function: you're done.
+    If neither channel has a value ready, call waitForData() and then time.Sleep() for 500 milliseconds. After all, we want to show in the logs that the snapshot service is running.
