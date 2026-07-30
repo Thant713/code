@@ -1,0 +1,16 @@
+Assignment
+
+The chief architect at Textio has decided she wants to implement billing with generics. Specifically, she wants us to create a new biller interface. A biller is an interface that can be used to charge a customer, and it can also report its name.
+
+There are two kinds of billers:
+
+    userBiller (cheaper)
+    orgBiller (more expensive)
+
+A customer is either a user or an org. A user will be billed with a user 
+Create the new biller interface. It should have 2 methods:
+
+    Charge
+    Name
+
+The good news is that the architect already wrote the userBiller and orgBiller types for us that fulfill this new biller interface. Use the definitions of those types and their methods to figure out how to write the biller interface definition.
