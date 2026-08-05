@@ -1,0 +1,7 @@
+Assignment
+
+Complete the getContentType function. It takes a pointer to a http.Response as input and should return the Content-Type header.
+
+Use the .Get() method on the Response struct's Header field to get what you need.
+
+Even though we've emphasized the need to close the response body, this is a mock response without a body. Trying to .Close() it will cause a panic.
