@@ -1,0 +1,16 @@
+Assignment
+
+Because we don't want any of our users to accidentally overwrite another user's saved data, our backend team has required that we use the X-API-Key header for all requests to Jello's server. When we use different values, we're telling the server that we are a different person.
+
+There's a bug in our main function! It should:
+
+    Get a Project from the Jello API.
+    Log that project to the console.
+    Update the project and send those changes back to the server.
+    Get the project struct again and log the updated project to the console.
+
+    Run the code in its current state to see the return values.
+
+Notice that the two structs that are logged to the console are the same. That's because the X-API-Key they are using is different, the update isn't being applied to the same account that we're checking in the last getProjectResponse call.
+
+    Use the same apiKey value in the last call to getProjectResponse.
