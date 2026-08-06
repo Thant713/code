@@ -1,0 +1,8 @@
+Assignment
+
+Complete the getUsers function. It should:
+                  
+    Call http.Get using its url parameter.
+    Decode the JSON data from the response and return it.
+
+We've done this all before, but now you're writing it all from scratch!
