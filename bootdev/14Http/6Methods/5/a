@@ -1,0 +1,8 @@
+Status Code Property
+
+The http.Response struct has a .StatusCode property that contains the status code of the response.
+Assignment
+
+Update the getUserCode function to return the status code of the response.
+
+You should get a 404 response when requesting a user that doesn't exist!

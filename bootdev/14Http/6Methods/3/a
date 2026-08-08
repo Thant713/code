@@ -1,0 +1,14 @@
+Assignment
+
+Complete the createUser function. It should:
+
+    Take a URL and apiKey string, and User data as parameters
+    Encode the user data using json.Marshal
+    Create a new POST request using http.NewRequest. Use a bytes.NewBuffer to create an io.Reader from the JSON data.
+    Modify the request headers:
+        Set the Content-Type header, with application/json as its value
+        Set the X-API-Key header, with apiKey as its value
+    Make the request using the http.Client's Do method. You can create a new *http.Client or use the http.DefaultClient
+    Decode and return the response's JSON body (which is also a User)
+
+Don't copy paste from the code above. Type it out and understand what each line does.
