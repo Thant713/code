@@ -1,0 +1,9 @@
+Assignment
+
+Complete the deleteUser function. It takes a baseURL, id and apiKey as inputs. You'll need to:
+
+    Create a new request using http.NewRequest and use the provided fullURL.
+    Modify the request headers
+        Set the X-API-Key header, with apiKey as its value
+    Make the request using the http.Client's Do method. You can create a new *http.Client or use the http.DefaultClient
+    Check the response status code. If the status code indicates a non-successful response, return an error. Otherwise return nil.
