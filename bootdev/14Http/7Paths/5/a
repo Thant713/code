@@ -1,0 +1,14 @@
+Assignment
+
+Jello's CEO has a new idea. They want us to implement a feature that allows users to see the issues with the lowest time estimate, and the number of issues shown depends on the user's availability.
+
+Complete the fetchTasks function. It should add two query parameters to the URL passed to getIssues:
+
+    sort
+    limit
+
+    Sort by estimate.
+    Set the value for limit based on the availability:
+        Low availability = 1 issue
+        Medium availability = 3 issues
+        High availability = 5 issues
