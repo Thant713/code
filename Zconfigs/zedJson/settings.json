@@ -2,53 +2,53 @@
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "cli_default_open_behavior": "new_window",
   "edit_predictions": {
     "provider": "ollama",
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "theme": {
     "mode": "dark",
     "light": "One Dark",
-    "dark": "One Dark Pro"
+    "dark": "One Dark Pro",
   },
   "on_last_window_closed": "quit_app",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "agent_servers": {
     "opencode": {
       "default_config_options": {
-        "mode": "plan"
+        "mode": "plan",
       },
-      "type": "registry"
+      "type": "registry",
     },
     "gemini": {
       "default_mode": "plan",
-      "type": "registry"
+      "type": "registry",
     },
     "codex-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "icon_theme": "Material Icon Theme",
   "title_bar": {
     "show_onboarding_banner": true,
     "show_project_items": false,
     "show_branch_name": false,
-    "show_user_menu": true
+    "show_user_menu": true,
   },
   "tab_bar": {
-    "show": true
+    "show": true,
   },
   "toolbar": {
-    "quick_actions": true
+    "quick_actions": true,
   },
   "status_bar": {
-    "experimental.show": true
+    "experimental.show": true,
   },
   "project_panel": {
     "dock": "right",
@@ -58,38 +58,38 @@
     "git_status": true,
     "sticky_scroll": false,
     "scrollbar": {
-      "show": "never"
+      "show": "never",
     },
     "indent_guides": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
   "outline_panel": {
     "default_width": 300,
     "indent_guides": {
-      "show": "always"
-    }
+      "show": "always",
+    },
   },
   "file_finder": {
-    "modal_max_width": "large"
+    "modal_max_width": "large",
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "gutter": {
     "min_line_number_digits": 0,
     "folds": true,
-    "runnables": true
+    "runnables": true,
   },
   "indent_guides": {
-    "enabled": true
+    "enabled": true,
   },
   "ui_font_family": "Ubuntu Mono",
   "ui_font_size": 20,
   "buffer_font_family": "Ubuntu Mono",
   "buffer_font_size": 20,
   "buffer_line_height": {
-    "custom": 2
+    "custom": 2,
   },
   "agent_buffer_font_size": 20,
   "vim_mode": false,
@@ -98,7 +98,7 @@
   "cursor_blink": false,
   "selection_highlight": true,
   "drag_and_drop_selection": {
-    "enabled": true
+    "enabled": true,
   },
   "seed_search_query_from_cursor": "never",
   "current_line_highlight": "line",
@@ -114,8 +114,8 @@
   "format_on_save": "on",
   "autosave": {
     "after_delay": {
-      "milliseconds": 5000
-    }
+      "milliseconds": 5000,
+    },
   },
   "auto_update": false,
   "extend_comment_on_newline": true,
@@ -126,15 +126,25 @@
   "restore_on_file_reopen": false,
   "restore_on_startup": "last_session",
   "session": {
-    "restore_unsaved_buffers": false
+    "restore_unsaved_buffers": false,
   },
   "git": {
     "inline_blame": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "centered_layout": {
     "right_padding": 0.15,
-    "left_padding": 0.15
-  }
+    "left_padding": 0.15,
+  },
+  "languages": {
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "sql-formatter",
+          "arguments": ["--config", "/home/t/.config/zed/sql-formatter.json"],
+        },
+      },
+    },
+  },
 }
