@@ -1,0 +1,3 @@
+Assignment
+
+Write an SQL statement to update the country_code value from 'USA' to 'US' for all applicable user records. Ensure that only those records initially marked with 'USA' are changed!
