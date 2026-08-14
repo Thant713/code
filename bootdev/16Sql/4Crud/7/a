@@ -1,0 +1,8 @@
+Assignment
+
+The way we store transactions at CashPal is interesting. The user identified by user_id is the "owner" of each transaction. Because user_id already identifies the owner, only the user on the other side needs another ID:
+
+    If the owner receives money, sender_id identifies the sender and recipient_id is NULL.
+    If the owner sends money, recipient_id identifies the recipient and sender_id is NULL.
+
+From the transactions table, select all columns for transactions where the owner is receiving money.

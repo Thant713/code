@@ -1,0 +1,20 @@
+Assignment
+
+Let's add some more records into our users table, but allow the database to automatically increment the id field. Add the following records to the database:
+Record 1
+
+    name: 'Lance'
+    age: 20
+    country_code: 'US'
+    username: 'LanChr'
+    password: 'bootdevisbest'
+    is_admin: false
+
+Record 2
+
+    name: 'Tiffany'
+    age: 28
+    country_code: 'US'
+    username: 'Tifferoon'
+    password: 'autoincrement'
+    is_admin: true

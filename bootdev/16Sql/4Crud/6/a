@@ -1,0 +1,5 @@
+Assignment
+
+We need to know the username of all the users in our users table that have admin privileges! Retrieve them.
+
+Check the up migration file (001_up.sql) to see which fields exist.
