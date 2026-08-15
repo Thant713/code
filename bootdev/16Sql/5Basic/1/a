@@ -1,0 +1,6 @@
+Assignment
+
+A user has asked us to find all the transactions on their account from their grandmother. We thought it would be fun to rename the note field to birthday_message because we noticed all the transactions from Grandma are birthday messages.
+
+    Return the amount and note fields from the transactions table where the sender_id is 10 (Grandma).
+    The note field should be renamed to birthday_message.
