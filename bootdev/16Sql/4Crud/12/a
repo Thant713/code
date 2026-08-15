@@ -1,0 +1,5 @@
+Assignment
+
+Write an SQL query that returns the count of every record from the users table that has their country_code equal to US.
+
+Remember, we want to know the number of total records, so we can use the wildcard (*) in COUNT(*). While you could normally use the id column, i.e. COUNT(id), for this assignment stick with the wildcard.
