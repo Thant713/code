@@ -7,7 +7,7 @@
   "cli_default_open_behavior": "new_window",
   "edit_predictions": {
     "provider": "ollama",
-    "mode": "subtle",
+    "mode": "eager",
   },
   "theme": {
     "mode": "dark",
@@ -22,7 +22,7 @@
   "agent_servers": {
     "opencode": {
       "default_config_options": {
-        "mode": "plan",
+        "mode": "build",
       },
       "type": "registry",
     },
@@ -124,7 +124,7 @@
   "when_closing_with_no_tabs": "close_window",
   "close_on_file_delete": true,
   "restore_on_file_reopen": false,
-  "restore_on_startup": "last_session",
+  "restore_on_startup": "launchpad",
   "session": {
     "restore_unsaved_buffers": false,
   },

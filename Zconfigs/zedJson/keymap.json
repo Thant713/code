@@ -3,8 +3,8 @@
     "context": "!Editor",
     "bindings": {
       "k": "menu::SelectPrevious",
-      "j": "menu::SelectNext"
-    }
+      "j": "menu::SelectNext",
+    },
   },
   {
     "context": "Editor",
@@ -13,23 +13,24 @@
       "cmd-[": "editor::Fold",
       "cmd-]": "editor::UnfoldLines",
       "cmd-alt-[": "editor::FoldAll",
-      "cmd-alt-]": "editor::UnfoldAll"
-    }
+      "cmd-alt-]": "editor::UnfoldAll",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
       "alt-f": "zed::OpenSettingsFile",
       "alt-k": "zed::OpenKeymapFile",
-      "cmd-\\": "workspace::ActivatePreviousPane"
-    }
+      "alt-o": "workspace::Open",
+      "cmd-\\": "workspace::ActivatePreviousPane",
+    },
   },
   {
     "context": "ProjectPanel",
     "bindings": {
       "alt-z": "project_panel::NewFile",
-      "alt-x": "project_panel::NewDirectory"
-    }
+      "alt-x": "project_panel::NewDirectory",
+    },
   },
   {
     "bindings": {
@@ -37,56 +38,74 @@
       "alt-w": "workspace::ToggleRightDock",
       "alt-e": "project_panel::ToggleFocus",
       "alt-d": "agent::ToggleFocus",
-      "alt-s": "editor::ToggleFocus"
-    }
+      "alt-s": "editor::ToggleFocus",
+    },
   },
   {
     "context": "ProjectPanel",
     "bindings": {
       "enter": "project_panel::Open",
-      "f2": "project_panel::Rename"
-    }
+      "f2": "project_panel::Rename",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-c": "agent::AddSelectionToThread"
-    }
+      "alt-c": "agent::AddSelectionToThread",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-1": ["workspace::ActivatePane", 0]
+      "ctrl-1": [
+        "workspace::ActivatePane",
+        0
+      ]
     }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "alt-1": ["workspace::ActivatePane", 0]
+      "alt-1": [
+        "workspace::ActivatePane",
+        0
+      ]
     }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-2": ["workspace::ActivatePane", 1]
+      "ctrl-2": [
+        "workspace::ActivatePane",
+        1
+      ]
     }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "alt-2": ["workspace::ActivatePane", 1]
+      "alt-2": [
+        "workspace::ActivatePane",
+        1
+      ]
     }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-3": ["workspace::ActivatePane", 2]
+      "ctrl-3": [
+        "workspace::ActivatePane",
+        2
+      ]
     }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "alt-3": ["workspace::ActivatePane", 2]
+      "alt-3": [
+        "workspace::ActivatePane",
+        2
+      ]
     }
   }
 ]
