@@ -9,7 +9,7 @@ def fib(n: int) -> int:
     grandparent = 0
     parent = 1
     current = 0
-    for i in range(n - 1):
+    for _ in range(n - 1):
         current = parent + grandparent
         parent, grandparent = current, parent
     return current

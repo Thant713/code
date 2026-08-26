@@ -1,0 +1,26 @@
+Assignment
+
+Complete the letter_combinations function using the algorithm outlined below. It takes a string of digits and returns a list of strings of letters.
+
+    If the input string is empty, return an empty list.
+    Define a result list to hold the output strings. Have it contain just an empty string to start (we need that one element to build on).
+    Iterate over the input digits. For each of them:
+        If the digit is any invalid character, i.e. not found in the provided digit_to_letters dictionary, raise a ValueError to abort the function:
+
+        raise ValueError(f"invalid digit: {digit}")
+
+        Get the string of letters that can be represented by the current digit, from digit_to_letters.
+        Define a new_result list – empty to start with.
+        Enter two nested for loops:
+            For each string (combo) in result, iterate over each letter in the current digit's letters.
+            Append combo + letter to new_result.
+        After the two nested loops, but still inside the main loop over digits, set result equal to new_result.
+    After the main loop, return the result.
+
+Reality Check
+
+Let's return to the hypothetical 32-digit phone number, which could form ~1.85 quadrillion letter sequences at minimum – assuming the four-letter digits (7 and 9) never appear.
+
+Even if we could process 1 million of those possible combinations per second, getting through all of them would take over 58 years. And if we wanted to store all those strings, it would be 60+ petabytes of data!
+
+Though maybe storage will be cheap in the next century...
