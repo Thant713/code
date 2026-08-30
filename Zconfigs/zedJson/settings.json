@@ -138,6 +138,14 @@
     "left_padding": 0.15,
   },
   "languages": {
+    "Python": {
+      "formatter": {
+        "external": {
+          "command": "/home/t/.local/share/zed/languages/ruff/ruff-0.16.4/ruff-x86_64-unknown-linux-gnu/ruff",
+          "arguments": ["format", "--stdin-filename", "$BUFFER_PATH", "-"],
+        },
+      },
+    },
     "SQL": {
       "formatter": {
         "external": {
