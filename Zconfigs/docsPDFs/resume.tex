@@ -1,0 +1,141 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08004pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Thant Naing Aung} \\ \vspace{1pt}
+    \small (929) 248-9535 $|$ \href{mailto:tommyshein713@gmail.com}{\underline{tommyshein713@gmail.com}} $|$
+    Jersey City, NJ $|$
+    \href{https://github.com/Thant713}{\underline{github.com/Thant713}}
+\end{center}
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Necklace-to-Bond} $|$ \emph{Go, REST API, JSON}}{2026}
+      \resumeItemListStart
+        \resumeItem{Developed a Go CLI that calculates Grand Exchange crafting profit from live OSRS market prices}
+        \resumeItem{Fetches live prices for every item in a single request from the OSRS Wiki real-time API}
+        \resumeItem{Adds up ingredient costs and computes profit per necklace after the 2\% Grand Exchange tax (capped at 5M GP)}
+        \resumeItem{Prints results as a clean terminal table}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, C++, SQL, HTML/CSS} \\
+     \textbf{Developer Tools}{: Git, GitHub, Linux, Command Line} \\
+     \textbf{Technologies}{: HTTP, REST APIs}
+    }}
+ \end{itemize}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Borough of Manhattan Community College}{New York, NY}
+      {Associate of Science in Computer Science, GPA 3.5}{In Progress}
+    \resumeSubheading
+      {Touro University}{Moscow, Russia}
+      {Bachelor of Science in Management}{Sep. 2021}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {S.D.E.C International School}{Nov. 2023 -- Feb. 2024}
+      {Coordinator (Building C)}{Yangon, Myanmar}
+      \resumeItemListStart
+        \resumeItem{Collected and organized opinions and requests from students, teachers, and parents using Google Forms}
+        \resumeItem{Assisted with administrative and organizational tasks}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Capital Diamond Star Group of Companies}{Apr. 2023 -- Oct. 2023}
+      {Office Assistant}{Yangon, Myanmar}
+      \resumeItemListStart
+        \resumeItem{Used Excel for administrative and data-related tasks}
+        \resumeItem{Assisted with general office operations and documentation}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
