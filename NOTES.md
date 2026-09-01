@@ -38,3 +38,7 @@ When tailoring a resume for a targeted job posting, apply (from ATS video):
 
 - Project section has 4 bullets (~3 recommended); trim proposal unanswered.
 - No LaTeX toolchain locally; user compiles via web pdflatex — avoid XeLaTeX-only constructs.
+
+## 2026-09-01 — cppExercises/csc211/inClass/1 (InventoryItem)
+
+`main.cpp` is complete and correct. Missing only the `InventoryItem` class — user confirmed assumption: **only need to create files for the `InventoryItem` object** (nothing else in main.cpp to change). Files to create: `InventoryItem.h` (+ likely `InventoryItem.cpp`). Class must supply, per main.cpp usage: private `string/double/int` members (description, cost, units), a 3-arg constructor, and getters `getDescription()`/`getCost()`/`getUnits()`. Source: Gaddis Starting Out With C++ (9th Global Ed), the repo PDF. Per AGENTS.md: teach mode — walk through, don't hand over finished code.
