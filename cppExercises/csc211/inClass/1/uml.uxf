@@ -1,0 +1,11 @@
+<<Class>>
+InventoryItem
+--
+-item: String
+-cost: double
+-units: int
+--
++InventoryItem(i: String, c: double, u: int)
++getDescription(): String
++getCost(): double
++getUnits(): int

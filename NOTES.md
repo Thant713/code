@@ -42,3 +42,33 @@ When tailoring a resume for a targeted job posting, apply (from ATS video):
 ## 2026-09-01 — cppExercises/csc211/inClass/1 (InventoryItem)
 
 `main.cpp` is complete and correct. Missing only the `InventoryItem` class — user confirmed assumption: **only need to create files for the `InventoryItem` object** (nothing else in main.cpp to change). Files to create: `InventoryItem.h` (+ likely `InventoryItem.cpp`). Class must supply, per main.cpp usage: private `string/double/int` members (description, cost, units), a 3-arg constructor, and getters `getDescription()`/`getCost()`/`getUnits()`. Source: Gaddis Starting Out With C++ (9th Global Ed), the repo PDF. Per AGENTS.md: teach mode — walk through, don't hand over finished code.
+
+### Completed: InventoryItem (.h + .cpp)
+
+- `InventoryItem.h`: include guard `INVENTORYITEM_H`, `#include <string>`, `class InventoryItem { private: std::string item; double cost; int units; public: InventoryItem(std::string i, double c, int u); getters (const) };`
+- `InventoryItem.cpp`: 3-arg constructor assigns `item=i; cost=c; units=u;`; getters `InventoryItem::getDescription()/getCost()/getUnits()` each `const`, return the member. Only include `"InventoryItem.h"` (no cstdlib/iostream needed).
+- UML file `uml.uxf` in same dir is the solved diagram (User: "the ans i got for uml").
+
+### UML generation (CLASS → .uxf diagram) — do this when asked
+
+When user gives a class (`.h`/`.cpp`) and asks "make a UML like this one", emit the `.uxf` target format exactly like the solved `uml.uxf`:
+
+```
+<<Class>>
+ClassName
+--
+-member: Type          (private)
+-member: Type
+--
++ClassNme(params: types)
++Method(param: Type): ReturnType
+```
+
+Rules (mirror `inClass/1/uml.uxf`):
+- `<<Class>>` line, then class name.
+- `--` divider, then **private** members `-name: Type` (lowercase types: `double`, `int`, `String` per the example — note example capitalizes String).
+- `--` divider, then **public** methods `+Name(params): ReturnType`; constructor `+ClassName(`params`)` — no return type.
+- Params written `(i: String, c: double, u: int)` (name: type, comma-separated).
+- Getters listed as `+getDescription(): String`, etc.
+- Ignores `const` (example doesn't show it) — do NOT include const in the UML.
+- Save format: write/overwrite `uml.uxf` in the same dir as the class files.

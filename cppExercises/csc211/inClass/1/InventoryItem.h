@@ -11,6 +11,7 @@ private:
 
 public:
   InventoryItem(std::string i, double c, int u);
+
   std::string getDescription() const;
   double getCost() const;
   int getUnits() const;
