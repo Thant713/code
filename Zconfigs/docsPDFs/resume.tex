@@ -34,13 +34,13 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\bfseries\scshape\raggedright
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item{
     {#1 \vspace{-2pt}}
   }
 }
@@ -49,21 +49,21 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{#1} & \textit{#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      #1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -80,12 +80,18 @@
 
 \begin{center}
     {\fontsize{16}{20}\selectfont\bfseries Thant Naing Aung} \\ \vspace{1pt}
-    \small Jersey City, NJ / New York, NY \textbar{} \href{mailto:tommyshein713@gmail.com}{\underline{tommyshein713@gmail.com}} \textbar{} (929) 248-9535 \textbar{}
+    Jersey City, NJ / New York, NY \textbar{} \href{mailto:tommyshein713@gmail.com}{\underline{tommyshein713@gmail.com}} \textbar{} (929) 248-9535 \textbar{}
     \href{https://github.com/Thant713}{\underline{github.com/Thant713}}
 \end{center}
 
-\section{Professional Summary}
-  Computer Science student at BMCC with a 3.5 GPA, focused on backend development. Built a Go CLI tool integrating a live REST API to compute real-time pricing data. Experienced with Python, Go, C++, SQL, HTTP, and REST APIs.
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Languages}{: Go, Python, C++, SQL, HTML/CSS} \\
+     \textbf{Technologies}{: REST APIs, HTTP} \\
+     \textbf{Developer Tools}{: Git, GitHub, Linux, Command Line}
+    }
+ \end{itemize}
 
 \section{Projects}
   \resumeSubHeadingListStart
@@ -99,15 +105,6 @@
 \resumeItem{Outputs results as a formatted terminal table for quick readability}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Go, Python, C++, SQL, HTML/CSS} \\
-     \textbf{Technologies}{: REST APIs, HTTP} \\
-     \textbf{Developer Tools}{: Git, GitHub, Linux, Command Line}
-    }}
- \end{itemize}
 
 \section{Education}
   \resumeSubHeadingListStart

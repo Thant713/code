@@ -7,8 +7,9 @@ Resume is just short of complete. Target visual: `handshake.pdf` (Times-family l
 ### State of resume.tex
 
 - `\documentclass[letterpaper,11pt]{article}`; **mathptmx** (Times-equivalent) — fontspec/Times New Roman/Cambria fail because the web LaTeX editor is pdflatex-only (no XeLaTeX); user accepted mathptmx as closest-to-Times that compiles.
-- Full master-macro formatting (matches `resume-master/`): `\small` in all macros, name `\fontsize{16}{20}\bfseries`, skills label-bold-only, single `labelitemii`.
-- Content order (user-mandated): Professional Summary → Projects → Skills → Education → Work History.
+- Full master-macro formatting (matches `resume-master/`): name `\fontsize{16}{20}\bfseries`, skills label-bold-only, single `labelitemii`.
+- Content order (user-mandated 2026-08-31 update): Skills → Projects → Education → Work History; Professional Summary removed.
+- Everything under the name is 11pt (no `\small`/`\large`); section headings bold `\bfseries\scshape` at 11pt.
 - Section named "Work History"; dates "Month YYYY", no periods, plain `-` dash (ATS-safe, not `--`).
 - Location shows "Jersey City, NJ / New York, NY" (small city / big city for ATS local filter).
 - No math-mode left: `$|$` → `\textbar{}`.
