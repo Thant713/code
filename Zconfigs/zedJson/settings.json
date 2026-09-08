@@ -1,4 +1,4 @@
-{
+  {
   "agent": {
     "dock": "right",
     "favorite_models": [],
@@ -151,6 +151,15 @@
         "external": {
           "command": "sql-formatter",
           "arguments": ["--config", "/home/t/.config/zed/sql-formatter.json"],
+        },
+      },
+    },
+  },
+  "lsp": {
+    "gopls": {
+      "settings": {
+        "analyses": {
+          "fieldalignment": true,
         },
       },
     },

@@ -11,3 +11,4 @@ Installed extensions for this Zed setup. Install via `zed: install extension` in
 | `mcp-server-context7` | Context7 MCP Server | 0.0.5   |
 | `mcp-server-github`   | GitHub MCP Server   | 0.1.0   |
 | `sql`                 | SQL                 | 1.1.8   |
+| `latex`               | LaTeX               | 0.2.3   |
