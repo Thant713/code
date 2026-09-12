@@ -1,4 +1,3 @@
-
 Assignment
 
 Complete the exponential_growth function. Given the initial followers count n, growth factor factor, and number of days days, return a list containing the exponential growth of followers for each day.

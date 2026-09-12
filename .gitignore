@@ -8,6 +8,11 @@
 # Test binary
 *.test
 
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
 # Output of go coverage
 *.out
 
