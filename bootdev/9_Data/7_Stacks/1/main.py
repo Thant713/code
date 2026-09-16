@@ -6,7 +6,7 @@ class Stack:
         self.items: list[Any] = []
 
     def push(self, item: Any) -> None:
-        pass
+        self.items.append(item)
 
     def size(self) -> int:
-        pass
+        return len(self.items)
