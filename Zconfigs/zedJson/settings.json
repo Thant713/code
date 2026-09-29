@@ -1,4 +1,4 @@
-  {
+{
   "agent": {
     "dock": "right",
     "favorite_models": [],
@@ -141,7 +141,7 @@
     "Python": {
       "formatter": {
         "external": {
-          "command": "/home/t/.local/share/zed/languages/ruff/ruff-0.16.4/ruff-x86_64-unknown-linux-gnu/ruff",
+          "command": "/home/t/.local/share/zed/languages/ruff/ruff-0.16.9/ruff-x86_64-unknown-linux-gnu/ruff",
           "arguments": ["format", "--stdin-filename", "$BUFFER_PATH", "-"],
         },
       },

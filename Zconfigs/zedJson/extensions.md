@@ -5,7 +5,7 @@ Installed extensions for this Zed setup. Install via `zed: install extension` in
 | Extension ID          | Name                | Version |
 | --------------------- | ------------------- | ------- |
 | `git-firefly`         | Git Firefly         | 0.1.9   |
-| `html`                | HTML                | 0.3.1   |
+| `html`                | HTML                | 0.3.2   |
 | `log`                 | LOG                 | 0.0.7   |
 | `material-icon-theme` | Material Icon Theme | 1.3.1   |
 | `mcp-server-context7` | Context7 MCP Server | 0.0.5   |
